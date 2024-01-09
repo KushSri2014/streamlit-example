@@ -6,8 +6,6 @@ import time
 st.title("Hi 🙌")
 st.text("Hello Welcome to this website:")
 go = st.text_input("What do you want to search?\n")
-if go == "":
-    st.text("Sorry, I didn't understand")
 time.sleep(2)
 su = wikipedia.summary(go)
 st.write(su)
